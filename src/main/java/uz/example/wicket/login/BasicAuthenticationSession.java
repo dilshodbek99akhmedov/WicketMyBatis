@@ -1,10 +1,10 @@
-package uz.example.login;
+package uz.example.wicket.login;
 
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.authroles.authorization.strategies.role.Roles;
 import org.apache.wicket.request.Request;
-import uz.example.db_service.users.User;
-import uz.example.db_service.users.UserService;
+import uz.example.dao.User;
+import uz.example.service.UserService;
 
 /**
  * @author Dilshodbek Akhmedov, Tue 10:30. 07/06/22

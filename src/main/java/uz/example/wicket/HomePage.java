@@ -1,4 +1,4 @@
-package uz.example.view;
+package uz.example.wicket;
 
 import org.apache.wicket.Session;
 import org.apache.wicket.ajax.AjaxRequestTarget;
@@ -16,8 +16,8 @@ import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.request.Request;
 import org.apache.wicket.request.Response;
 import org.apache.wicket.util.string.StringValue;
-import uz.example.db_service.users.User;
-import uz.example.db_service.users.UserService;
+import uz.example.dao.User;
+import uz.example.service.UserService;
 
 import java.util.List;
 
@@ -25,10 +25,8 @@ import java.util.List;
  * Homepage
  */
 public class HomePage extends WebPage {
-
     private static final long serialVersionUID = 1L;
 
-    // TODO Add any page properties or variables here
     UserService service = new UserService();
 
     /**

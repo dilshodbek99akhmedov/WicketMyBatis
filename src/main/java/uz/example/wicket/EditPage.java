@@ -1,4 +1,4 @@
-package uz.example.view;
+package uz.example.wicket;
 
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.ajax.markup.html.form.AjaxButton;
@@ -11,8 +11,8 @@ import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.markup.html.panel.FeedbackPanel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.model.PropertyModel;
-import uz.example.db_service.users.User;
-import uz.example.db_service.users.UserService;
+import uz.example.dao.User;
+import uz.example.service.UserService;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package uz.example.login;
+package uz.example.wicket.login;
 
 import org.apache.wicket.Application;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebApplication;

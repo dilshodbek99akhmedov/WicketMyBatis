@@ -1,4 +1,4 @@
-package uz.example.db_service;
+package uz.example.conf;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactory;

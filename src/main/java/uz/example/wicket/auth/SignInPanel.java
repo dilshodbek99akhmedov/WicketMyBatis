@@ -1,4 +1,4 @@
-package uz.example.authentication.pages;
+package uz.example.wicket.auth;
 
 import org.apache.wicket.RestartResponseException;
 import org.apache.wicket.authentication.IAuthenticationStrategy;

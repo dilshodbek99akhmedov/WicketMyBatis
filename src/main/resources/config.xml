@@ -6,7 +6,7 @@
     <properties resource="jdbc.properties"/>
 
     <typeAliases>
-        <typeAlias alias="User" type="uz.example.db_service.users.User"/>
+        <typeAlias alias="User" type="uz.example.dao.User"/>
     </typeAliases>
 
     <environments default="development">

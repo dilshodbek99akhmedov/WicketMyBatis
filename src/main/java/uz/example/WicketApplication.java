@@ -1,6 +1,5 @@
 package uz.example;
 
-import org.apache.wicket.DefaultMarkupIdGenerator;
 import org.apache.wicket.authroles.authentication.AuthenticatedWebSession;
 import org.apache.wicket.core.request.mapper.CryptoMapper;
 import org.apache.wicket.core.util.file.WebApplicationPath;
@@ -9,8 +8,8 @@ import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.util.lang.Bytes;
-import uz.example.login.BasicAuthenticationSession;
-import uz.example.login.SingInPage;
+import uz.example.wicket.login.BasicAuthenticationSession;
+import uz.example.wicket.login.SingInPage;
 
 /**
  * Application object for your web application. If you want to run this application without deploying, run the Start class.

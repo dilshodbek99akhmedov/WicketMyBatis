@@ -1,4 +1,4 @@
-package uz.example.login;
+package uz.example.wicket.login;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;

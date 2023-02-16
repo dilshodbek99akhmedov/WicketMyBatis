@@ -1,4 +1,4 @@
-package uz.example.login;
+package uz.example.wicket.login;
 
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.markup.html.form.PasswordTextField;
@@ -7,9 +7,9 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.model.CompoundPropertyModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.util.string.Strings;
-import uz.example.db_service.users.User;
-import uz.example.db_service.users.UserService;
-import uz.example.view.HomePage;
+import uz.example.dao.User;
+import uz.example.service.UserService;
+import uz.example.wicket.HomePage;
 
 /**
  * @author Dilshodbek Akhmedov, Tue 15:26. 07/06/22

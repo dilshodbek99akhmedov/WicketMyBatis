@@ -1,11 +1,12 @@
-package uz.example.db_service.users;
+package uz.example.repository;
 
 
 import org.apache.ibatis.annotations.Param;
+import uz.example.dao.User;
 
 import java.util.List;
 
-public interface UserMapper {
+public interface UserRepository {
 
     Long insert(@Param("user") User user);
 

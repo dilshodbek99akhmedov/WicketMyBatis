@@ -2,7 +2,7 @@ package uz.example;
 
 import junit.framework.TestCase;
 import org.apache.wicket.util.tester.WicketTester;
-import uz.example.view.HomePage;
+import uz.example.wicket.HomePage;
 
 /**
  * Simple test using the WicketTester

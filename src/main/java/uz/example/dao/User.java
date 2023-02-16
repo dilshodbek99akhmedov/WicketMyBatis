@@ -1,4 +1,4 @@
-package uz.example.db_service.users;
+package uz.example.dao;
 
 
 import lombok.*;

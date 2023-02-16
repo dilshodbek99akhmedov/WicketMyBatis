@@ -1,4 +1,4 @@
-package uz.example.view;
+package uz.example.wicket;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
@@ -9,8 +9,8 @@ import org.apache.wicket.markup.html.form.TextField;
 import org.apache.wicket.markup.html.form.upload.FileUploadField;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.request.mapper.parameter.PageParameters;
-import uz.example.db_service.users.User;
-import uz.example.db_service.users.UserService;
+import uz.example.dao.User;
+import uz.example.service.UserService;
 
 
 /**

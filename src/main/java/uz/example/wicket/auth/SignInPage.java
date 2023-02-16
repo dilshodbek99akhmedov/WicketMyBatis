@@ -1,4 +1,4 @@
-package uz.example.authentication.pages;
+package uz.example.wicket.auth;
 
 import org.apache.wicket.authroles.authentication.panel.SignInPanel;
 import org.apache.wicket.markup.html.WebPage;
