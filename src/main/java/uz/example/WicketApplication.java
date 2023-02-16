@@ -56,8 +56,7 @@ public class WicketApplication extends WebApplication {
                 .add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF);
 
 
-        getResourceSettings().getResourceFinders().add(
-                new WebApplicationPath(getServletContext(), "css_files"));
+        getResourceSettings().getResourceFinders().add(new WebApplicationPath(getServletContext(), "css_files"));
 
 
 //        getCspSettings().blocking().disabled();
