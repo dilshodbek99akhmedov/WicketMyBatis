@@ -1,0 +1,45 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="uz.example.db_service.users.UserMapper">
+
+    <resultMap id="users_batis" type="uz.example.db_service.users.User">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="username" column="username"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <select id="getUsers" resultMap="users_batis">
+        select *
+        from users_batis
+    </select>
+
+    <delete id="deleteById" parameterType="Long">
+        DELETE
+        from users_batis ub
+        where ub.id = #{id}
+    </delete>
+
+    <select id="getUser" resultMap="users_batis">
+        select *
+        from users_batis ub
+        where ub.username = #{username}
+    </select>
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into users_batis (name, age, username, password)
+        values (#{user.name}, #{user.age}, #{user.username}, #{user.password});
+    </insert>
+
+    <update id="update">
+        update users_batis
+        set name     = #{user.name},
+            age      = #{user.age},
+            username = #{user.username},
+            password = #{user.password}
+        where id = #{user.id};
+    </update>
+
+
+</mapper>

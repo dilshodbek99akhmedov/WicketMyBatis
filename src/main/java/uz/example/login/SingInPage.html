@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org" lang="en">
+<head>
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-4 offset-4">
+            <h1>
+                <span wicket:id="message">message will be replaced later</span>
+            </h1>
+            <form id="loginForm" method="post" wicket:id="loginForm">
+                <!-- Email input -->
+                <div class="form-outline mb-3">
+                    <label class="form-label" for="usernames">Email address</label>
+                    <input type="text" id="usernames" class="form-control" wicket:id="username"/>
+                </div>
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                    <label class="form-label" for="passwords">Password</label>
+                    <input type="password" id="passwords" class="form-control" wicket:id="password"/>
+                </div>
+                <!-- Submit button -->
+                <div class="form-outline">
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+
